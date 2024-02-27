@@ -1,0 +1,75 @@
+<mat-card
+  style="margin-bottom: 5px; padding-bottom: 0%; margin-top: 0; padding-top: 0; border-top: 0; padding-left: 0px; margin-left: 0; border-left: 0;">
+  <mat-list style="margin: 0; padding: 0; border: 0;">
+    <mat-list-item style="margin: 0; padding: 0; border: 0; height: var(--tamanio-cuadro-idicador);">
+      <mat-icon mat-list-icon
+        style="padding: 0px; margin: 0; border: 0; font-size: var(--tamanio-icono-indocador);">shutter_speed</mat-icon>
+      <div mat-line><mat-card-title
+          style="font-size: var(--tamanio-texto-indicador); margin-bottom: 0; padding-bottom: 0; padding-bottom: 0;">Unidad de medida
+        </mat-card-title></div>
+      <div mat-line>
+        <div aria-label="breadcrumb" style="font-size: var(--tamanio-texto-camino); border: 0; padding: 0; margin: 0;">
+          <ol class="breadcrumb " style="border: 0; padding: 0; margin: 0;">
+            <li class="breadcrumb-item derecha"><a  style="color: black; text-decoration: none;" routerLink = "/director-dashboard">Inicio</a></li>
+            <li class="breadcrumb-item active derecha" style="color: var(--color-migajas-de-pan); text-decoration: none;"  aria-current="page">Agregar unidad de medida</li>
+          </ol>
+        </div>
+      </div>
+    </mat-list-item>
+  </mat-list>
+</mat-card>
+
+
+
+<div class="joinnow">
+  <div class="login col-lg-7 m-auto shadow-lg">
+    <div class="container mt-4 mb-5">
+      <div class="row">
+        <div>
+          <form (ngSubmit)= "agregarConglomerado()">
+              <div class="box mt-3 mb-3">
+          
+                
+              <mat-form-field class="w100" appearance="outline">
+                <mat-label>Abreviatura</mat-label>
+                <input
+                type="text"
+                name="abreviatura"
+                matInput
+                placeholder="Ingresa la abreviatura de la unidad medida"
+                [(ngModel)] = "medida.abreviatura"
+                >
+              </mat-form-field>
+
+              <mat-form-field class="w100" appearance="outline">
+                <mat-label>Unidad de la medida</mat-label>
+                <input
+                type="text"
+                name="unidad"
+                matInput
+                placeholder="Ingrese la unidad de la medida"
+                [(ngModel)] = "medida.unidadMedida"
+                >
+              </mat-form-field>
+
+              <mat-form-field class="w100" appearance="outline">
+                <mat-label>Magnitud</mat-label>
+                <input
+                type="text"
+                name="magnirud"
+                matInput
+                placeholder="Ingrese la magnitud de la unidad de medida"
+                [(ngModel)] = "medida.magnitud"
+                >
+              </mat-form-field>
+
+              <div class="container text-center mt15">
+                <button mat-raised-button color="primary">Agregar</button>
+              </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>

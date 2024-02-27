@@ -1,0 +1,125 @@
+.mat-stepper-horizontal {
+    margin-top: 8px;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+
+  /*--------------------------------------------------------*/
+  
+.contenedor-btn-file input[type="file"] {
+    appearance: none;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    z-index: -1;
+  }
+  .contenedor-btn-file {
+    display: inline-block;
+    position: relative;
+    background-color: var(--color-boton-importar);
+    color: #fff;
+    border: 0;
+    padding: 8px 20px;
+    border-radius: 4px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .15);
+    overflow: hidden;
+    transition: ease-out 120ms background-color;
+  }
+  .contenedor-btn-file:hover {
+    background-color: var(--color-boton-importar);
+  }
+  .contenedor-btn-file:active {
+    background-color: var(--color-boton-importar);
+  }
+  .contenedor-btn-file > i {
+    margin-right: 0px;
+  }
+  
+  .contenedor-btn-file label {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+  
+  .contenedor-btn-file.bordeado {
+    background-color: var(--color-boton-importar);
+    border: 2px solid var(--color-boton-importar);
+    color: #fff;
+  }
+  .contenedor-btn-file.bordeado:hover {
+    background-color: var(--color-boton-importar);
+    color: #fff;
+  }
+  table {
+    width: 100%;
+  }
+
+  /*---------------------------*/
+  .chart-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .chart-item {
+    flex: 1;
+    max-width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  @media screen and (max-width: 600px) {
+    .chart-item {
+      flex-basis: 100%;
+    }
+  }
+  
+  
+  
+  .full-width-table {
+    width: 100%;
+  }
+  
+  .example-header-image {
+    background-image: url('/assets/imgIconoProyecto.JPG');
+    background-size: cover;
+  }
+  
+  
+  .w100{
+    width: 100%;
+  }
+  
+  
+
+  
+  
+  
+  
+  
+
+  .example-header-image {
+    background-image: url('/assets/imgIconoProyecto.JPG');
+    background-size: cover;
+  }
+
+
+
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .link-unstyled {
+    color: inherit;
+    text-decoration: none;
+    /* Agrega cualquier otra propiedad que desees para anular los estilos */
+  }

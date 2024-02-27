@@ -1,0 +1,9 @@
+package GIDAC.repositorios;
+
+import GIDAC.modelo.RespuestaSolicitudActualizar;
+import java.util.List;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface RespuestaSolicitudActualizarRepository extends JpaRepository<RespuestaSolicitudActualizar,Integer> {
+   List<RespuestaSolicitudActualizar> findBySolicitudActualizarDatoEstadoSolicitudActualizarNombreEstadoSolicitudAndSolicitudActualizarDatoGrupoInvestigacionProyectoInvestigacionIdProyecto(String nombreEstado, Integer idproyecto);
+}
